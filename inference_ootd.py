@@ -84,8 +84,8 @@ class OOTDiffusion:
                 torch_dtype=self.torch_dtype,
             ),
             torch_dtype=self.torch_dtype,
-            variant="fp16",
-            use_safetensors=True,
+            variant=None,
+            use_safetensors=False,
             safety_checker=None,
             requires_safety_checker=False,
         ).to(self.device)
